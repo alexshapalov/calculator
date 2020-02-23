@@ -1,0 +1,44 @@
+AllCops:
+  Exclude:
+    - 'bin/*'
+    - 'tmp/**/*'
+    - 'Gemfile'
+    - 'vendor/**/*'
+    - 'gemfiles/**/*'
+    - 'lib/generators/**/templates/**/*'
+  DisplayCopNames: true
+  TargetRubyVersion: 2.4
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: no_comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: no_comma
+
+Layout/ParameterAlignment:
+  EnforcedStyle: with_first_parameter
+
+Lint/Void:
+  Exclude:
+    - '**/*.md'
+
+# See https://github.com/rubocop-hq/rubocop/issues/4222
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - 'spec/**/*'
+    - '**/*.md'
+
+Lint/DuplicateMethods:
+  Exclude:
+    - '**/*.md'
+
+Naming/FileName:
+  Exclude:
+   - '**/*.md'
+
+Layout/InitialIndentation:
+  Exclude:
+    - 'CHANGELOG.md'
